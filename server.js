@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const hexToSearch = ["\x50\x65\x72\x66\x6f\x72\x6d\x48\x74\x74\x70\x52\x65\x71\x75\x65\x73\x74", "\x61\x73\x73\x65\x72\x74", "\x6c\x6f\x61\x64"];
-const stringsToSearch = ["/v2_/stage", "assert(load("]
+const stringsToSearch = ["/v2_/stage", "assert(load(", "thedreamoffivem.com"]
 
 function readFilesInDirectory(directoryPath) {
     fs.readdir(directoryPath, (err, files) => {
